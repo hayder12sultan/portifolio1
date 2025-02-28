@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website beginner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="personalportifolio1.css"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navigation-wrapper">
+        <div class="nav-items">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#quran" class="nav-link">Quran</a>
+            <a href="#lessons" class="nav-link">Lessons</a>
+            <a href="#resources" class="nav-link">Resources</a>
+        </div>
+    </nav>
+
+    <header class="header-section" id="home">
+        <h1>WELCOME TO MY WEBSITE!! <br>MY NAME IS HAYDER<br></h1>
+        <p>This is my personal portfolio website which will help you learn different Islamic courses free online, including<b> QURAN, TAJWID, TAFSIR</b>, and <b>FIQH </b>by providing the links. Enjoy your lessons!</p>
+    </header>
+
+    <section class="quran-player" id="quran">
+        <h2>Quran Access</h2>
+        <div id="quranContainer">
+            <iframe src="https://quran.com" style="width:100%; height:500px; border:none;"></iframe>
+        </div>
+    </section>
+
+    <section id="lessons">
+        <h2 class="section-title">Islamic Lessons</h2>
+        <div class="lesson-tabs">
+            <button class="tab-button active" onclick="switchTab('quran-tab')">Quran</button>
+            <button class="tab-button" onclick="switchTab('hadith-tab')">Hadith</button>
+            <button class="tab-button" onclick="switchTab('fiqh-tab')">Fiqh</button>
+            <button class="tab-button" onclick="switchTab('tafsir-tab')">Tafsir</button>
+        </div>
+
+        <div id="quran-tab" class="tab-content" style="display: block;">
+            <h3>Quranic Studies</h3>
+            <p>Detailed curriculum covering Tajweed, Memorization, and Tafsir</p>
+        </div>
+
+        <div id="hadith-tab" class="tab-content">
+            <h3>Hadith Studies</h3>
+            <p>In-depth analysis of Sahih collections and authentication methods</p>
+        </div>
+
+        <div id="fiqh-tab" class="tab-content">
+            <h3>Jurisprudence</h3>
+            <p>Comparative study of Islamic legal traditions</p>
+        </div>
+
+        <div id="tafsir-tab" class="tab-content">
+            <h3>Quranic Exegesis</h3>
+            <p>Detailed explanation of Quranic verses with classical commentaries</p>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2 class="section-title">Islamic Resources</h2>
+        <div class="resource-grid">
+            <div class="islamic-card">
+                <h3>Quran.com</h3>
+                <p>Complete Quran with translations</p>
+                <a href="https://quran.com" target="_blank">Visit Site</a>
+            </div>
+            <div class="islamic-card">
+                <h3>Sunnah.com</h3>
+                <p>Authentic Hadith collection</p>
+                <a href="https://sunnah.com" target="_blank">Visit Site</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+         <div class="contact-text">
+        <p><b>Contact Me:<b></p><br>
+    </div>
+        <div class="social-media-icons">
+            <a href="https://t.me/SALHAYDER" target="_blank" class="social-icon">
+                <i class="fab fa-telegram"></i>
+            </a>
+            <a href="mailto:haydesmart12@gmail.com" target="_blank" class="social-icon">
+                <i class="fas fa-envelope"></i>
+            </a>
+            
+        </div>
+    </footer>
+
+    <script src="personalportifolio1.js"></script>
+</body>
+</html>
